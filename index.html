@@ -10,187 +10,218 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar">
-            <div class="logo">PORTFOLIO<span></span></div>
-            <ul class="nav-links mt-3">
-                <li><a href="#landing">Home</a></li>
-                <li><a href="#projects">My Projects</a></li>
-                <li><a href="#tools">Tools</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    <!-- end of Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item fw-bold"><a class="nav-link" href="#landing">Home</a></li>
+                    <li class="nav-item fw-bold"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item fw-bold"><a class="nav-link" href="#tools">Tools</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary rounded-pill btn-sm fw-bold px-3 text-white" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <header id="landing" class="hero container-fluid p-5">
-        <div class="row">
-        <div class="col-lg-6 col-md-12">
-            <img src="./images/jonathan.jpeg" width="300" height="300" class="rounded-circle">
-        </div>
-        <div class="hero-content mx-auto p-4 text-wrap col-lg-6 col-md-12">
-            <h1>Jonathan Rocero</h1>
-            <h3>Full Stack Web Developer</h3>
-            <p> I’m a Full-Stack Developer based in the Philippines. I recently transitioned into tech to turn my love for building things into a career. I spend my days (and sometimes nights) diving deep into JavaScript, tinkering with React hooks, and ensuring my backend logic is as tight as my UI.</p>
-           
-        </div>
+    <header id="landing" class="hero">
+        <div class="container">
+            <div class="row align-items-center text-center text-lg-start">
+                <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+                    <img src="./images/jroceropic.jpg" alt="Jonathan Rocero" class="rounded-circle hero-img">
+                </div>
+                <div class="col-lg-7">
+                    <h1 class="display-4 fw-bold">Jonathan Rocero</h1>
+                    <h3 class="text-primary mb-3">Full Stack Web Developer</h3>
+                    <p class="lead">I’m a Full-Stack Developer based in the Philippines. I recently transitioned into tech to turn my love for building things into a career. I spend my days diving deep into JavaScript and ensuring my backend logic is as tight as my UI.</p>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="projects" class="container">
-    <h2 class="section-title">My Projects</h2>
-    <div class="project-grid">
-        
-        <div class="project-card">
-            <div class="project-img-container">
-                <img src="https://d1zruf9db62p8s.cloudfront.net/2025/08/eCommerce-Development-Understanding-API-Integrations-.webp" alt="E-Commerce API Documentation" class="project-image img-fluid">
-            </div>
-            <h3>E-Commerce API Documentation</h3>
-            <p>Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API publishe publicly using Postman.</p>
-        </div>
-
-        <div class="project-card">
-            <div class="project-img-container">
-                <img src="https://www.shutterstock.com/image-vector/api-documentation-developers-illustration-vector-600nw-2667952869.jpg" alt="Course Booking API" class="project-image img-fluid">
-            </div>
-            <h3>Course Booking API Documentation</h3>
-            <p>RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of userr details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.</p>
-        </div>
-
-        <div class="project-card">
-            <div class="project-img-container">
-                <img src="https://wpswings.com/wp-content/uploads/2021/05/Online-Booking-System-feature.png" alt="Course Booking App" class="project-image img-fluid">
-            </div>
-            <h3>Course Booking App</h3>
-            <p>A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.</p>
-        </div>
-
-        <div class="project-card">
-            <div class="project-img-container">
-                <img src="https://www.zilliondesigns.com/blog/wp-content/uploads/Mobile-E-Commerce.jpg" alt="E-commerce App" class="project-image img-fluid">
-            </div>
-            <h3>E-commerce App</h3>
-            <p>MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless car updates, secure checkout, and a comprehensive admin dashboard with real-time analytic and user management capabilities.</p>
-        </div>
-
-        <div class="project-card">
-            <div class="project-img-container">
-                <img src="https://cdn.sriggle.tech/kantents/production/1/1345/06/ce100e07-fc5b-485e-8cd3-45f74d02f45f.png" alt="Airline Mockup" class="project-image img-fluid">
-            </div>
-            <h3>Airline Booking System Mockup</h3>
-            <p>Side Project: Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.</p>
-        </div>
-
-        <div class="project-card">
-            <div class="project-img-container">
-                <img src="https://static.vecteezy.com/system/resources/previews/027/260/970/non_2x/book-your-flight-online-booking-concept-happy-young-man-book-two-plane-tickets-trendy-flat-style-illustration-vector.jpg" alt="Airline Prototype" class="project-image img-fluid">
-            </div>
-            <h3>Airline Booking System Prototype</h3>
-            <p>Side Project: Interactive prototype simulating end-toend airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.</p>
-        </div>
-
-        <div class="project-card">
-            <div class="project-img-container">
-                <img src="https://cdn.prod.website-files.com/5e6bef9160e290b99b7644b5/63e4ba3649397b3b0e246d8c_Essayservice%20_%20What%20is%20Capstone%20Project_.png" alt="Airline Prototype" class="project-image img-fluid">
-            </div>
-            <h3>Short Courses Capstone</h3>
-            <p>Placeholder for your short courses capstone project</p>
-        </div>
-
-        <div class="project-card">
-            <div class="project-img-container">
-                <img src="https://img.freepik.com/free-vector/illustration-reserch-concept_53876-27171.jpg?semt=ais_user_personalization&w=740&q=80" alt="Airline Prototype" class="project-image img-fluid">
-            </div>
-            <h3>Short Courses Capstone</h3>
-            <p>Placeholder for your short courses capstone project</p>
-        </div>
-
-        <div class="project-card">
-            <div class="project-img-container">
-                <img src="https://framerusercontent.com/images/ifLY44RXZqGos8yLelXjnbkElQA.png" alt="Airline Prototype" class="project-image img-fluid">
-            </div>
-            <h3>Short Courses Capstone</h3>
-            <p>Placeholder for your short courses capstone project</p>
-        </div>
-
-    </div>
-    </section>
-    
-    <section id="tools" class="mt-3">
-        <h2>Tools</h2>
-    <div id="dev-tools" class="skills-section">
-        <div class="skill-group">
-            <h3 class="mb-5">Front End</h3>
-            <ul class="logo-list">
-                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg5cbLgPXdbCLRC4LL4YjPsyKqjWY1Lb5JnQ&s" alt="HTML5"></li>
-                <li><img src="https://images.seeklogo.com/logo-png/18/1/css3-logo-png_seeklogo-186678.png" alt="CSS3"></li>
-                <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpjNUY__aGdkCCwyOAZxCNMd6LSP5CZLIL1Q&s" alt="Bootstrap"></li>
-                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/960px-Unofficial_JavaScript_logo_2.svg.png" alt="JS"></li>
-            </ul>
-        </div>
-
-        <div class="skill-group">
-            <h3 class="mb-5">MERN Stack</h3>
-            <ul class="logo-list">
-                <li><img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/mongodb-w2bj0jen5kr3h7vj2fx6q.png/mongodb-uhxzoyk705n8seb04ait9.png?_a=DATAiZAAZAA0" alt="MongoDB"></li>
-                <li><img src="https://www.pngfind.com/pngs/m/136-1363736_express-js-icon-png-transparent-png.png" alt="Express"></li>
-                <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React"></li>
-                <li><img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js"></li>
-            </ul>
-        </div>
-
-        <div class="skill-group">
-            <h3 class="mb-5">Other Tools</h3>
-            <ul class="logo-list">
-                <li><img src="https://img.icons8.com/color/1200/heroku.jpg" alt="heroku"></li>
-                <li><img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" alt="Git"></li>
-                <li><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub"></li>
-                <li><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman"></li>
-            </ul>
-        </div>
-    </div>
-    </section>
-
-    <section id="contact" class="container px-4">
-        <h2 class="mt-5 py-2 mb-5 text-center">Contact</h2>
-        <div id="map" class="row m-3 justify-content-center-content-center">
-        
-
-                <div class="col-lg-6 col-md-12 mx-auto">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.8677592777317!2d120.9829628!3d14.5495539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cb006d580d4b%3A0x9c26bfec3a729c8e!2sDiwata%20Pares%20Overload%20Pasay!5e0!3m2!1sen!2sph!4v1772197994793!5m2!1sen!2sph" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>    
-                    <div class="col-lg-6 col-md-12 border border-dark rounded" id="form-col">
-                      <form class="p-3 rounded">
-                        <div class="mb-3">
-                          <label for="name" class="form-label">Name</label>
-                          <input type="text" class="form-control" id="name" placeholder="Your Name">
-                        </div>
-
-                        <div class="mb-3">
-                          <label for="email" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                        </div>
-
-                        <div class="mb-3">
-                          <label for="message" class="form-label">Message</label>
-                          <textarea class="form-control" id="message" rows="3"></textarea>
-                        </div>
-
-                        <button id="submit" type="button" class="btn btn-dark rounded-pill float-end" data-bs-toggle="modal" data-bs-target="#modalDiv">
-                          Submit
-                        </button>
-                      </form>
+    <section id="projects" class="py-5 container">
+        <h2 class="text-center mb-5 fw-bold">My Projects</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card project-card">
+                    <div class="project-img-container">
+                        <img src="https://d1zruf9db62p8s.cloudfront.net/2025/08/eCommerce-Development-Understanding-API-Integrations-.webp" class="card-img-top" alt="E-Commerce API">
                     </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">E-Commerce API</h5>
+                        <p class="card-text small text-muted">Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API publishe publicly using Postman.</p>
+                    </div>
+                </div>
             </div>
+            <div class="col">
+                <div class="card project-card">
+                    <div class="project-img-container">
+                        <img src="https://www.shutterstock.com/image-vector/api-documentation-developers-illustration-vector-600nw-2667952869.jpg" class="card-img-top" alt="Course API">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Course Booking API</h5>
+                        <p class="card-text small text-muted">RESTful API for managing course enrollments, featuring user registration, authentication, and retrieval of userr details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card project-card">
+                    <div class="project-img-container">
+                        <img src="https://www.booking-wp-plugin.com/wp-content/uploads/2019/10/booking-software-for-online-lessons-tutorials-and-webinars-jpg.webp" class="card-img-top" alt="Booking App">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Course Booking App</h5>
+                        <p class="card-text small text-muted">A MERN-stack course enrollment system featuring user registration, authentication, and profile management. Authenticated users can create, update, archive, and activate courses. The platform also allows users to browse available courses and enroll seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card project-card">
+                    <div class="project-img-container">
+                        <img src="https://www.zilliondesigns.com/blog/wp-content/uploads/Mobile-E-Commerce.jpg" class="card-img-top" alt="Booking App">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">E-commerce App</h5>
+                        <p class="card-text small text-muted">MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless car updates, secure checkout, and a comprehensive admin dashboard with real-time analytic and user management capabilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card project-card">
+                    <div class="project-img-container">
+                        <img src="https://cdn.sriggle.tech/kantents/production/1/1345/06/ce100e07-fc5b-485e-8cd3-45f74d02f45f.png" class="card-img-top" alt="Booking App">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Airline Booking System Mockup</h5>
+                        <p class="card-text small text-muted">Side Project: Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card project-card">
+                    <div class="project-img-container">
+                        <img src="https://static.vecteezy.com/system/resources/previews/027/260/970/non_2x/book-your-flight-online-booking-concept-happy-young-man-book-two-plane-tickets-trendy-flat-style-illustration-vector.jpg" class="card-img-top" alt="Booking App">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Airline Booking System Prototype</h5>
+                        <p class="card-text small text-muted">Side Project: Interactive prototype simulating end-toend airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket management.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card project-card">
+                    <div class="project-img-container">
+                        <img src="https://cdn.prod.website-files.com/5e6bef9160e290b99b7644b5/63e4ba3649397b3b0e246d8c_Essayservice%20_%20What%20is%20Capstone%20Project_.png" class="card-img-top" alt="Booking App">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Short Courses Capstone</h5>
+                        <p class="card-text small text-muted">Placeholder for your short courses capstone project</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card project-card">
+                    <div class="project-img-container">
+                        <img src="https://img.freepik.com/free-vector/illustration-reserch-concept_53876-27171.jpg?semt=ais_user_personalization&w=740&q=80" class="card-img-top" alt="Booking App">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Short Courses Capstone</h5>
+                        <p class="card-text small text-muted">Placeholder for your short courses capstone project</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card project-card">
+                    <div class="project-img-container">
+                        <img src="https://framerusercontent.com/images/ifLY44RXZqGos8yLelXjnbkElQA.png" class="card-img-top" alt="Booking App">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Short Courses Capstone</h5>
+                        <p class="card-text small text-muted">Placeholder for your short courses capstone project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <div id="links" class="text-center mb-5 d-flex flex-row justify-content-center">
-        <div><a href="https://www.linkedin.com/" target="_blank">
-            <img src="https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png">
-        </a></div>
-        <div><a href="https://gitlab.com/" target="_blank"><img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/gitlab-icon-svg-download-png-9632974.png"></a></div>
-        <div><a href="https://github.com/" target="_blank"><img src="https://www.logo.wine/a/logo/GitHub/GitHub-Logo.wine.svg"></a></div>
+
+    <section id="tools" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5 fw-bold">Tools</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="mb-4">Front End</h4>
+                    <ul class="logo-list">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="mb-4">MERN Stack</h4>
+                    <ul class="logo-list">
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node"></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="mb-4">Dev Tools</h4>
+                    <ul class="logo-list">
+                        <li><img src="https://img.icons8.com/color/1200/heroku.jpg" alt="heroku"></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"></li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></li>
+                        <li><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 container">
+        <h2 class="text-center mb-5 fw-bold">Get In Touch</h2>
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="ratio ratio-4x3 h-100">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248148.73239209352!2d121.99077328050606!3d13.638048085877847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a2f8279cc1bf93%3A0xf46c422525a95334!2sCatanauan%2C%20Quezon!5e0!3m2!1sen!2sph!4v1773524032535!5m2!1sen!2sph" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <form class="p-4 border rounded shadow-sm bg-white">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100 py-2">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="links" class="py-4 text-center">
+        <a href="https://www.linkedin.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn"></a>
+        <a href="https://gitlab.com/" target="_blank"><img src="https://cdn.worldvectorlogo.com/logos/gitlab.svg" alt="Gitlab"></a>
+        <a href="https://github.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"></a>
     </div>
 
-    <footer id="footer">
-        <p>&copy; 2026 Jonathan Rocero Dev. Built with passion.</p>
+    <footer>
+        <div class="container">
+            <p class="my-4">© 2026 Jonathan Rocero Dev. Built with passion.</p>
+        </div>
     </footer>
 
 
